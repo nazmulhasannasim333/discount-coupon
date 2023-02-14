@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment and Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/dc547d5d7c.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-fuchsia-50">
+    <header>
+        <h2 class="text-center font-semibold text-2xl mt-10">Apply Coupon and Get up to 30% Discount</h2>
+    </header>
+    <main>
+        <div class="grid place-content-start md:place-content-center mt-10">
+            <div class="bg-white p-8">
+                <div>
+                    <h4>Discount and Payment</h4>
+                    <div class="mt-2">
+                        <span class=""><i class="fa-solid fa-receipt text-orange-500 mr-3"></i> Voucher</span><span class="ml-60 text-slate-300">
+                         No Applicable Voucher</span>
+                    </div>
+                    <div class="mt-5">
+                        <div>
+                        <span class=""><i class="fa-solid fa-tags text-orange-500 mr-3"></i>Promo Code</span><span id="show-input" class="ml-48 text-slate-300">
+                        Enter Store/Daraz Coder <i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                        <div id="input-div" style="display: none;">
+                            <input id="input-field"  class="border w-96 h-10 p-2 mt-5 " type="text" placeholder="Enter Store/Daraz Code">
+                            <button id="input-btn" class="bg-slate-100 px-4 py-2">Confirm</button><br>
+                            <span id="error_msg"></span>
+                        </div>
+                    </div>
+                    <hr class="mt-6">
+                </div>
+                <div>
+                    <h4 class="font-medium text-md mt-5">Order Summary</h4>
+                    <div class="mt-2">
+                        <span class="font-medium text-md mt-5"></i>Items Total</span><span class="ml-80"><i class="fa-solid fa-bangladeshi-taka-sign text-sm mr-2"></i></span><span id="item-price">590</span>
+                    </div>
+                    <div class="mt-2">
+                        <span class="font-medium text-md mt-5"></i>Delivery Fee</span><span class="ml-80"><i class="fa-solid fa-bangladeshi-taka-sign text-sm mr-2"></i></span><span id="item-delivery-fee">80</span>
+                    </div>
+                    <div class="mt-2">
+                        <span class="font-medium text-md mt-5"></i>Total Payment</span><span class="" style="margin-left: 300px;"><i class="fa-solid fa-bangladeshi-taka-sign text-sm mr-2"></i></span><span id="item-tota-payment">670</span>
+                    </div>
+                    <div class="mt-2">
+                        <span class="font-medium text-md mt-5"></i>Total</span><span class="text-orange-500" style="margin-left: 367px;"><i class="fa-solid fa-bangladeshi-taka-sign text-sm mr-2"></i></span><span id="total-payment" class="text-orange-500" >670</span>
+                    </div>
+                    <div>
+                        <p class="text-right text-sm text-slate-500">VAT included, where applicable</p>
+                    </div>
+                    <div>
+                        <button id="place-order-btn" class="bg-orange-600 py-2 min-w-full mt-5 text-white">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/deposit.js"></script>
+    <script src="./js/widrow.js"></script>
+    <script src="./js/apply-coupon.js"></script>
+
+</body>
+</html>
